@@ -1,0 +1,492 @@
+.booking{
+  color: #000000;
+  background-color: #f8f5f2;
+  padding-top: 30px;
+  padding-bottom: 39px;
+  position: relative;
+}
+.booking::after {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 35px;
+  background-image: linear-gradient(to top right, transparent 48%, #242424 2%, #f8f5f2 50%), linear-gradient(to top left, transparent 48%, #242424 2%, #f8f5f2 50%);
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: 50.1% 100%;
+}
+.btn--home{
+  display: none;
+}
+.booking__header {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 27px;
+}
+.booking__heading {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.booking-haircut {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.booking-haircut__contacts {
+  margin-bottom: 40px;
+}
+.booking-haircut__name,
+.booking-haircut__coms {
+  margin-bottom: 32px;
+}
+.booking-haircut__field {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+  height: 50px;
+  padding: 18px 0 18px 20px;;
+  color: #000000;
+  border: 1px solid #e5ddd5;
+  outline: none;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+}
+.booking-haircut__field--info{
+  min-height: 100px;
+}
+.booking-haircut__field:hover {
+  border-color: #d5c9bd;
+}
+.booking-haircut__field:focus {
+  border-color: #940000;
+}
+.booking-haircut__beard-model,
+.booking-haircut__additional-service {
+  margin-bottom: 46px;
+}
+.booking-haircut__title {
+  margin-bottom: 38px;
+  text-align: center;
+}
+.booking-haircut__title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.booking-haircut__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+.booking-haircut__list li {
+  position: relative;
+}
+.booking-haircut__list li:nth-last-of-type(1) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.booking-haircut__list--model li {
+  margin-bottom: 29px;
+  padding-top: 65px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+.booking-haircut__list--model li img {
+  display: block;
+  margin: 0 auto;
+}
+.booking-haircut__list--model li:nth-child(1) {
+  padding-left: 20px;
+  padding-right: 16px;
+}
+.booking-haircut__list--model li:nth-child(2) {
+  padding-left: 16px;
+  padding-right: 17px;
+}
+.booking-haircut__list--model li:nth-child(3) {
+  padding-left: 17px;
+  padding-right: 14px;
+}
+.booking-haircut__field--model,
+.booking-haircut__field--additional {
+  position: absolute;
+  display: none;
+}
+.booking-haircut__label {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.booking-haircut__label::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid #e5ddd5;
+  background: #ffffff;
+}
+.booking-haircut__label--model {
+  margin-bottom: 13px;
+  text-align: center;
+}
+.booking-haircut__label--model::before {
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#admiral:active ~ .booking-haircut__label--model[for="admiral"]::before,
+#lumberjack:active ~ .booking-haircut__label--model[for="lumberjack"]::before,
+#polar-explorer:active ~ .booking-haircut__label--model[for="polar-explorer"]::before,
+#boyar:active ~ .booking-haircut__label--model[for="boyar"]::before,
+#sage:active ~ .booking-haircut__label--model[for="sage"]::before {
+  border: 16px solid #d5c9bd;
+}
+#admiral:hover ~ .booking-haircut__label--model[for="admiral"]::before,
+#lumberjack:hover ~ .booking-haircut__label--model[for="lumberjack"]::before,
+#polar-explorer:hover ~ .booking-haircut__label--model[for="polar-explorer"]::before,
+#boyar:hover ~ .booking-haircut__label--model[for="boyar"]::before,
+#sage:hover ~ .booking-haircut__label--model[for="sage"]::before {
+  border-color: #d5c9bd;
+}
+#admiral:checked ~ .booking-haircut__label--model[for="admiral"]::before,
+#lumberjack:checked ~ .booking-haircut__label--model[for="lumberjack"]::before,
+#polar-explorer:checked ~ .booking-haircut__label--model[for="polar-explorer"]::before,
+#boyar:checked ~ .booking-haircut__label--model[for="boyar"]::before,
+#sage:checked ~ .booking-haircut__label--model[for="sage"]::before {
+  border: 1px solid #e5ddd5;
+}
+#admiral:checked ~ .booking-haircut__label--model[for="admiral"]::after,
+#lumberjack:checked ~ .booking-haircut__label--model[for="lumberjack"]::after,
+#polar-explorer:checked ~ .booking-haircut__label--model[for="polar-explorer"]::after,
+#boyar:checked ~ .booking-haircut__label--model[for="boyar"]::after,
+#sage:checked ~ .booking-haircut__label--model[for="sage"]::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid #e5ddd5;
+  background-color: #83654f;
+  z-index: 2;
+}
+#admiral.checked:hover ~ .booking-haircut__label--model[for="admiral"]::before,
+#lumberjack.checked:hover ~ .booking-haircut__label--model[for="lumberjack"]::before,
+#polar-explorer.checked:hover ~ .booking-haircut__label--model[for="polar-explorer"]::before,
+#boyar.checked:hover ~ .booking-haircut__label--model[for="boyar"]::before,
+#sage.checked:hover ~ .booking-haircut__label--model[for="sage"]::before {
+  border-color: #d5c9bd;
+}
+#admiral.checked:hover ~ .booking-haircut__label--model[for="admiral"]::after,
+#lumberjack.checked:hover ~ .booking-haircut__label--model[for="lumberjack"]::after,
+#polar-explorer.checked:hover ~ .booking-haircut__label--model[for="polar-explorer"]::after,
+#boyar.checked:hover ~ .booking-haircut__label--model[for="boyar"]::after,
+#sage.checked:hover ~ .booking-haircut__label--model[for="sage"]::after {
+  border-color: #d5c9bd;
+}
+#admiral.checked:active ~ .booking-haircut__label--model[for="admiral"]::before,
+#lumberjack.checked:active ~ .booking-haircut__label--model[for="lumberjack"]::before,
+#polar-explorer.checked:active ~ .booking-haircut__label--model[for="polar-explorer"]::before,
+#boyar.checked:active ~ .booking-haircut__label--model[for="boyar"]::before,
+#sage.checked:active ~ .booking-haircut__label--model[for="sage"]::before {
+  background-color: #d5c9bd;
+}
+#admiral.checked:active ~ .booking-haircut__label--model[for="admiral"]::after,
+#lumberjack.checked:active ~ .booking-haircut__label--model[for="lumberjack"]::after,
+#polar-explorer.checked:active ~ .booking-haircut__label--model[for="polar-explorer"]::after,
+#boyar.checked:active ~ .booking-haircut__label--model[for="boyar"]::after,
+#sage.checked:active ~ .booking-haircut__label--model[for="sage"]::after {
+  background-color: #d5c9bd;
+}
+.booking-haircut__title--additional-service {
+  margin-bottom: 36px;
+}
+.booking-haircut__list--additional li {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 60px;
+}
+.booking-haircut__list--additional li:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.booking-haircut__label--additional {
+  line-height: 36px;
+}
+.booking-haircut__label--additional::before {
+  left: 0;
+  width: 36px;
+  height: 36px;
+}
+#dye-beard:hover ~ .booking-haircut__label--additional[for="dye-beard"]::before,
+#twirl-mustache:hover ~ .booking-haircut__label--additional[for="twirl-mustache"]::before,
+#comb-beard:hover ~ .booking-haircut__label--additional[for="comb-beard"]::before,
+#trim-temple:hover ~ .booking-haircut__label--additional[for="trim-temple"]::before,
+#remove-gray:hover ~ .booking-haircut__label--additional[for="remove-gray"]::before,
+#polish-calvity:hover ~ .booking-haircut__label--additional[for="polish-calvity"]::before {
+  border-color: #d5c9bd;
+}
+#dye-beard:active ~ .booking-haircut__label--additional[for="dye-beard"]::before,
+#twirl-mustache:active ~ .booking-haircut__label--additional[for="twirl-mustache"]::before,
+#comb-beard:active ~ .booking-haircut__label--additional[for="comb-beard"]::before,
+#trim-temple:active ~ .booking-haircut__label--additional[for="trim-temple"]::before,
+#remove-gray:active ~ .booking-haircut__label--additional[for="remove-gray"]::before,
+#polish-calvity:active ~ .booking-haircut__label--additional[for="polish-calvity"]::before {
+  background-color: #d5c9bd;
+}
+#dye-beard:active ~ .booking-haircut__label--additional[for="dye-beard"]::after,
+#twirl-mustache:active ~ .booking-haircut__label--additional[for="twirl-mustache"]::after,
+#comb-beard:active ~ .booking-haircut__label--additional[for="comb-beard"]::after,
+#trim-temple:active ~ .booking-haircut__label--additional[for="trim-temple"]::after,
+#remove-gray:active ~ .booking-haircut__label--additional[for="remove-gray"]::after,
+#polish-calvity:active ~ .booking-haircut__label--additional[for="polish-calvity"]::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 18px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-top: none;
+  border-right: none;
+  background-color: #d5c9bd;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+#dye-beard:checked ~ .booking-haircut__label--additional[for="dye-beard"]::before,
+#twirl-mustache:checked ~ .booking-haircut__label--additional[for="twirl-mustache"]::before,
+#comb-beard:checked ~ .booking-haircut__label--additional[for="comb-beard"]::before,
+#trim-temple:checked ~ .booking-haircut__label--additional[for="trim-temple"]::before,
+#remove-gray:checked ~ .booking-haircut__label--additional[for="remove-gray"]::before,
+#polish-calvity:checked ~ .booking-haircut__label--additional[for="polish-calvity"]::before {
+  border: 1px solid #e5ddd5;
+}
+#dye-beard:checked ~ .booking-haircut__label--additional[for="dye-beard"]::after,
+#twirl-mustache:checked ~ .booking-haircut__label--additional[for="twirl-mustache"]::after,
+#comb-beard:checked ~ .booking-haircut__label--additional[for="comb-beard"]::after,
+#trim-temple:checked ~ .booking-haircut__label--additional[for="trim-temple"]::after,
+#remove-gray:checked ~ .booking-haircut__label--additional[for="remove-gray"]::after,
+#polish-calvity:checked ~ .booking-haircut__label--additional[for="polish-calvity"]::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 18px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-top: none;
+  border-right: none;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+#dye-beard.checked:active ~ .booking-haircut__label--additional[for="dye-beard"]::before,
+#twirl-mustache.checked:active ~ .booking-haircut__label--additional[for="twirl-mustache"]::before,
+#comb-beard.checked:active ~ .booking-haircut__label--additional[for="comb-beard"]::before,
+#trim-temple.checked:active ~ .booking-haircut__label--additional[for="trim-temple"]::before,
+#remove-gray.checked:active ~ .booking-haircut__label--additional[for="remove-gray"]::before,
+#polish-calvity.checked:active ~ .booking-haircut__label--additional[for="polish-calvity"]::before {
+  background-color: #d5c9bd;
+}
+#dye-beard.checked:active ~ .booking-haircut__label--additional[for="dye-beard"]::after,
+#twirl-mustache.checked:active ~ .booking-haircut__label--additional[for="twirl-mustache"]::after,
+#comb-beard.checked:active ~ .booking-haircut__label--additional[for="comb-beard"]::after,
+#trim-temple.checked:active ~ .booking-haircut__label--additional[for="trim-temple"]::after,
+#remove-gray.checked:active ~ .booking-haircut__label--additional[for="remove-gray"]::after,
+#polish-calvity.checked:active ~ .booking-haircut__label--additional[for="polish-calvity"]::after {
+  content: none;
+}
+.booking-haircut__btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #826550;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.booking-haircut__btn:hover {
+  background-color: #6a4d38;
+}
+.booking-haircut__btn:active {
+  color: #978374;
+  background-color: #6a4d38;
+}
+.booking-haircut__btn:disabled {
+  color: #ffffff;
+  background-color: #aeaeae;
+}
+
+@media (min-width: 768px) {
+  .booking{
+    padding: 40px;
+  }
+  .booking__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+  }
+  .booking__heading {
+    text-align: left;
+    padding-top: 10px;
+  }
+  .btn--home{
+    display: inline-block;
+  }
+  .booking-haircut__name{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .booking-haircut__field{
+    height: 70px;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+  }
+  .booking-haircut__field--info {
+    min-height: 210px;
+  }
+  .booking-haircut__field--coms[type="tel"]{
+    margin-bottom: 32px;
+  }
+  .booking-haircut__title h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 38px;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #f8f5f2;
+    z-index: 2;
+  }
+  .booking-haircut__title::after {
+    position: relative;
+    content: "";
+    display: block;
+    top: -18px;
+    border-bottom: 1px solid #e5ddd5;
+    z-index: 1;
+  }
+  .booking-haircut__list{
+    justify-content: space-between;
+  }
+  .booking-haircut__label {
+    font-size: 24px;
+  }
+  .booking-haircut__title {
+    margin-bottom: 65px;
+  }
+  .booking-haircut__list {
+    justify-content: space-between;
+  }
+  .booking-haircut__list--additional li {
+    width: 190px;
+    margin-bottom: 47px;
+    padding-right: 65px;
+  }
+  .booking-haircut__additional-service {
+    margin-bottom: 13px;
+  }
+  .booking::after{
+    display: none;
+  }
+  .page-header__logo{
+    height: 216px;
+    position: relative;
+  }
+  .page-header__logo::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 55px;
+    background: url(../images/method-draw-image.svg) no-repeat;
+    background-size: 100% 100%;
+  }
+  /* .page-header__logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #f8f5f2;
+    clip-path: polygon(50% 100%, 100% 0, 100% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(50% 100%, 100% 0, 100% 100%, 0 100%, 0 0);
+  } */
+}
+
+@media (min-width: 1200px) {
+  .booking{
+    padding-bottom: 100px;
+  }
+  .page-header__logo{
+    height: 306px;
+  }
+  .page-header__logo::after {
+    height: 64px;
+  }
+  .booking__header{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
+  .booking-haircut{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .booking-haircut__name{
+    justify-content: space-between;
+  }
+  .booking-haircut__field--name{
+    width: 30.5%;
+  }
+  .booking-haircut__coms{
+    display: flex;
+    justify-content: space-between;
+  }
+  .booking-haircut__field--coms{
+    width: 48%;
+  }
+  .booking__heading{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .booking-haircut__btn{
+    height: 70px;
+    padding: 20px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

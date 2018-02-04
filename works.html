@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/works.css">
+	<title>Barbershop</title>
+</head>
+<body>
+<header class="page-header">
+	<div class="page-header__logo"> 
+		<picture>
+			<source media="(min-width: 1200px)" srcset="images/logotype-desktop.svg">
+			<source media="(min-width: 768px)" srcset="images/logotype-tablet.svg">
+			<img src="images/logotype-mobile.svg" width="370" height="153" alt="Barbershop">
+		</picture>       
+	</div>
+		
+	<nav class="main-nav main-nav--closed">
+		<button class="main-nav__toggle" type="button">Открыть меню</button>        
+		<div class="main-nav__wrapper">
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="index.html">Главная</a></li>
+				<li class="main-nav__item main-nav__item--active"><a href="">Наши работы</a></li>
+				<li class="main-nav__item"><a href="form.html">Записаться</a></li>
+				<li class="main-nav__item"><a href="">Контакты</a></li>
+			</ul>
+			<ul class="main-nav__user-list">
+				<li class="main-nav__user-item">
+					<a class="main-nav__user-login" title="Войти" href="">
+						<i class="fas fa-sign-in-alt log-icon"></i>
+						Вход
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<div class="worksline">
+  <div class="works__container">
+    <header class="works__header">
+      <h2 class="works__heading">Наши работы</h2>
+      <a href="index.html" class="btn btn--home">На главную</a>
+    </header>    
+    <figure class="works__figure works__figure--best-of-month">
+      <picture>
+        <source media="(max-width: 320px)" srcset="images/works-photo1-m.jpg">
+        <source media="(max-width: 768px)" srcset="images/works-photo1-t.jpg">
+        <img src="images/works-photo1-d.jpg" alt="Photo1" class="works__photo works__photo--best-of-month">
+        <span class="works__tag">Работа месяца</span>
+      </picture>
+      <figcaption class="works__content works__content--best-of-month">
+        
+        <b class="works__name">Лжепётр Мчиславский</b>
+        <blockquote class="works__review">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
+        <ul class="works__list">
+          <li class="works__item works__item--scissors">Стрижка</li>
+          <li class="works__item works__item--beard">Бритье</li>
+          <li class="works__item works__item--mustache">Усы</li>
+        </ul>
+      </figcaption>
+    </figure>
+    <figure class="works__figure">
+      <picture>
+        <source media="(max-width: 320px)" srcset="images/works-photo2-m.jpg">
+        <source media="(max-width: 768px)" srcset="images/works-photo2-t.jpg">
+        <img src="images/works-photo2-d.jpg" alt="photo2" class="works__photo">
+      </picture>
+      <figcaption class="works__content">
+        <b class="works__name">Саша Мальцев</b>
+        <blockquote class="works__review">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
+        <ul class="works__list">
+          <li class="works__item works__item--scissors">Стрижка</li>
+        </ul>
+      </figcaption>
+    </figure>
+    <figure class="works__figure">
+      <picture>
+        <source media="(max-width: 320px)" srcset="images/works-photo3-m.jpg">
+        <source media="(max-width: 768px)" srcset="images/works-photo3-t.jpg">
+        <img src="images/works-photo3-d.jpg" alt="photo3" class="works__photo">
+      </picture>
+      <figcaption class="works__content">
+        <b class="works__name">Владимир Иваныч</b>
+        <blockquote class="works__review">К зимнему сезону — готов!</blockquote>
+        <ul class="works__list">
+          <li class="works__item works__item--beard">Борода</li>
+          <li class="works__item works__item--mustache">Усы</li>
+        </ul>
+      </figcaption>
+    </figure>
+    <figure class="works__figure">
+      <picture>
+        <source media="(max-width: 320px)" srcset="images/works-photo4-m.jpg">
+        <source media="(max-width: 768px)" srcset="images/works-photo4-t.jpg">
+        <img src="images/works-photo4-d.jpg" alt="photo4" class="works__photo">
+      </picture>
+      <figcaption class="works__content">
+        <b class="works__name">Винстон Синий</b>
+        <blockquote class="works__review">Как только зарастаю и волосы начинают мешать видеть — бегом в Бородинский!</blockquote>
+        <ul class="works__list">
+          <li class="works__item works__item--scissors">Стрижка</li>
+        </ul>
+      </figcaption>
+    </figure>
+  </div>
+ </div>
+				
+<footer class="page-footer">
+	<div class="page-footer__wrapper">
+		<p class="page-footer__contacts">
+			<b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная, 19/8<br>
+			<a class="btn" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.: </span>+7 (812) 555-66-66</a>
+		</p>
+			
+		<p class="page-footer__social">
+			<span class="social-links">
+				<span class="social-links__friend">Давайте дружить!</span>
+				<a class="social-link  social-link--vk" href="">Мы в Вконтакте</a>
+				<a class="social-link  social-link--fb" href="">Мы в Фейсбуке</a>
+				<a class="social-link  social-link--in" href="">Мы в Инстаграмме</a>
+			</span>
+		</p>
+	</div>
+</footer> 
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<title>Barbershop</title>
+</head>
+<body>
+<header class="page-header">
+	<div class="page-header__logo"> 
+		<picture>
+			<source media="(min-width: 1200px)" srcset="images/logotype-desktop.svg">
+			<source media="(min-width: 768px)" srcset="images/logotype-tablet.svg">
+			<img src="images/logotype-mobile.svg" width="370" height="153" alt="Barbershop">
+		</picture>       
+	</div>
+		
+	<nav class="main-nav main-nav--closed">
+		<button class="main-nav__toggle" type="button">Открыть меню</button>        
+		<div class="main-nav__wrapper">
+			<ul class="main-nav__list">
+				<li class="main-nav__item"><a href="index.html">Главная</a></li>
+				<li class="main-nav__item"><a href="works.html">Наши работы</a></li>
+				<li class="main-nav__item main-nav__item--active"><a href="form.html">Записаться</a></li>
+				<li class="main-nav__item"><a href="">Контакты</a></li>
+			</ul>
+			<ul class="main-nav__user-list">
+				<li class="main-nav__user-item">
+					<a class="main-nav__user-login" title="Войти" href="">
+						<i class="fas fa-sign-in-alt log-icon"></i>
+						Вход
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div class="booking">
+	<header class="booking__header">
+		<h1 class="booking__heading">Запись на стрижку</h1>
+		<a class="btn btn--home" href="index.html">На главную</a>
+	</header>
+	<form class="booking-haircut" action="" method="post">
+		<div class="booking-haircut__contacts">
+			<div class="booking-haircut__name">
+				<input class="booking-haircut__field  booking-haircut__field--name" type="text" name="name" placeholder="Имя">
+				<input class="booking-haircut__field  booking-haircut__field--name" type="text" name="surname" placeholder="Фамилия">
+				<input class="booking-haircut__field  booking-haircut__field--name" type="text" name="patronymic" placeholder="Отчество">
+			</div>
+			<div class="booking-haircut__coms">
+				<input class="booking-haircut__field  booking-haircut__field--coms" type="tel" name="tel" placeholder="Контактный телефон">
+				<input class="booking-haircut__field  booking-haircut__field--coms" type="email" name="email" placeholder="Контактный e-mail">
+			</div>
+			<div class="booking-haircut__info">
+				<textarea class="booking-haircut__field  booking-haircut__field--info" name="info-for-master" placeholder="Доп. информация для мастера" rows="5"></textarea>
+			</div>
+		</div>
+		<div class="booking-haircut__beard-model">
+			<div class="booking-haircut__title">
+				<h2>Выберите модель бороды:</h2>
+			</div>
+			<ul class="booking-haircut__list  booking-haircut__list--model">
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--model checked" type="radio" name="model" id="admiral">
+					<label class="booking-haircut__label  booking-haircut__label--model" for="admiral">адмирал</label>
+					<img src="images/beard-1.svg" width="52" height="49" alt="Модель «Адмирал»">
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--model" type="radio" name="model" id="lumberjack">
+					<label class="booking-haircut__label  booking-haircut__label--model" for="lumberjack">лесоруб</label>
+					<img src="images/beard-2.svg" width="58" height="68" alt="Модель «Лесоруб»">
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--model" type="radio" name="model" id="polar-explorer">
+					<label class="booking-haircut__label  booking-haircut__label--model" for="polar-explorer">полярник</label>
+					<img src="images/beard-3.svg" width="63" height="78" alt="Модель «Полярник»">
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--model" type="radio" name="model" id="boyar">
+					<label class="booking-haircut__label  booking-haircut__label--model" for="boyar">боярин</label>
+					<img src="images/beard-4.svg" width="57" height="97" alt="Модель «Боярин»">
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--model" type="radio" name="model" id="sage">
+					<label class="booking-haircut__label  booking-haircut__label--model" for="sage">мудрец</label>
+					<img src="images/beard-5.svg" width="45" height="104" alt="Модель «Мудрец»">
+				</li>
+			</ul>
+		</div>
+		<div class="booking-haircut__additional-service">
+			<div class="booking-haircut__title  booking-haircut__title--additional-service">
+				<h2>Дополнительные услуги:</h2>
+			</div>
+			<ul class="booking-haircut__list  booking-haircut__list--additional">
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--additional checked" type="checkbox" name="service-dye-beard" id="dye-beard">
+					<label class="booking-haircut__label  booking-haircut__label--additional" for="dye-beard">Подкрасить бороду</label>
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--additional" type="checkbox" name="service-twirl-mustache" id="twirl-mustache">
+					<label class="booking-haircut__label  booking-haircut__label--additional" for="twirl-mustache">Накрутить усы</label>
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--additional" type="checkbox" name="service-comb-beard" id="comb-beard">
+					<label class="booking-haircut__label  booking-haircut__label--additional" for="comb-beard">Причесать бороду</label>
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--additional" type="checkbox" name="service-trim-temple" id="trim-temple">
+					<label class="booking-haircut__label  booking-haircut__label--additional" for="trim-temple">Подровнять виски</label>
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--additional" type="checkbox" name="service-remove-gray" id="remove-gray">
+					<label class="booking-haircut__label  booking-haircut__label--additional" for="remove-gray">Убрать седину</label>
+				</li>
+				<li>
+					<input class="booking-haircut__field  booking-haircut__field--additional" type="checkbox" name="service-calvity" id="polish-calvity">
+					<label class="booking-haircut__label  booking-haircut__label--additional" for="polish-calvity">Отполировать лысину</label>
+				</li>
+			</ul>
+		</div>
+		<button class="btn booking-haircut__btn" type="submit">Отправить заявку</button>
+	</form>
+</div>				
+<footer class="page-footer">
+	<div class="page-footer__wrapper">
+		<p class="page-footer__contacts">
+			<b>Барбершоп Бородинский</b><br> г. Санкт-Петербург, ул. Большая Конюшенная, 19/8<br>
+			<a class="btn" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.: </span>+7 (812) 555-66-66</a>
+		</p>
+			
+		<p class="page-footer__social">
+			<span class="social-links">
+				<span class="social-links__friend">Давайте дружить!</span>
+				<a class="social-link  social-link--vk" href="">Мы в Вконтакте</a>
+				<a class="social-link  social-link--fb" href="">Мы в Фейсбуке</a>
+				<a class="social-link  social-link--in" href="">Мы в Инстаграмме</a>
+			</span>
+		</p>
+	</div>
+</footer> 
+<script src="js/script.js"></script>
+</body>
+</html>
